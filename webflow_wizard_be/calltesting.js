@@ -1,0 +1,1 @@
+{"message":"Login success","error":false,"code":200,"results":{"token":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjoiNjI1ZGMwZmI3OGY4MDEzNjQxZDhhNzk0IiwibmFtZSI6ImhpaWlpIiwiZW1haWwiOiJzZHVnQGdtYWlsLmNvbSJ9LCJpYXQiOjE2NTQ2NjMxNjMsImV4cCI6MTY1NDY2Njc2M30.0y6j6R6mjTGhtyKsfm1nUCCDUM7XE2GmtLukC-uCAys"}}
