@@ -1,0 +1,79 @@
+:root {
+  --backGrad: #069A8E;
+  --navcol: #005555cc;
+  --btn: #005555a6;
+  --btn_hover: #005555e4;
+  --optioncol: #069A8E;
+  --backGradBtns: #005555cc;
+}
+
+@media(max-width:1440px) {
+
+  input[type="text"],
+  input[type="email"],
+  input[type="password"],
+  option,
+  select {
+    width: 94%;
+  }
+
+  option {
+    background-color: var(--optioncol);
+    font-size: .8em;
+    border: none;
+    box-sizing: 50% 50%;
+
+  }
+}
+
+@media(max-width:1366px) {
+  h1 {
+    font-size: 2.6em;
+  }
+
+  .agileits-top {
+    padding: 1.5em;
+    margin: .5em;
+  }
+
+  .main-agileinfo {
+    margin: 1em auto;
+  }
+
+  .main-agileinfo {
+    width: 35%;
+  }
+
+  option {
+    background-color: var(--optioncol);
+    font-size: .8em;
+    border: none;
+
+  }
+}
+
+input[type="submit"] {
+  border-radius: 4px;
+  background-color: white;
+  color: var(--backGrad);
+  font-size: .9em;
+  font-weight: 400;
+  outline: none;
+  border: transparent;
+  cursor: pointer;
+  padding: 0.9em;
+  -webkit-appearance: none;
+  width: 94%;
+  margin: 1em .5em 1em .5em;
+}
+
+@media(max-width:1280px) {
+  .main-agileinfo {
+    width: 90%;
+  }
+
+  .agileits-top {
+    padding: 1.5em;
+    margin: .5em;
+  }
+}

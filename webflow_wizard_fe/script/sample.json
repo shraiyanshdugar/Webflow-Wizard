@@ -1,0 +1,12 @@
+{
+    "user1": {
+        "email": "kk.aa.kk@yandex.com",
+        "password": 12345678
+    },
+    "user2": {
+        "email": "kk.aa.kk1@yandex.com",
+        "password": 12345678
+    },
+    
+    "pet_uid": 6103180012
+}

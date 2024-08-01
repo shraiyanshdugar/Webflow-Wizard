@@ -1,0 +1,187 @@
+/*-- main --*/
+.main-w3layouts {
+    padding: 3em 0 1em;
+  }
+  
+  .main-agileinfo {
+    width: 35%;
+    margin: 3em auto;
+    background: rgba(0, 0, 0, 0.18);
+    background-size: cover;
+    border-radius: 8px;
+  }
+  
+  .agileits-top {
+    padding: 3em .5em 3em 1.9em;
+  }
+  
+  input[type="text"], input[type="email"], input[type="password"] {
+    font-size: 0.9em;
+    border-radius: 4px;
+    color: #fff;
+    font-weight: 100;
+    width: 94.5%;
+    display: block;
+    border: none;
+    padding: 0.8em;
+    border: solid 1px rgba(255, 255, 255, 0.37);
+    -webkit-transition: all 0.3s cubic-bezier(0.64, 0.09, 0.08, 1);
+    transition: all 0.3s cubic-bezier(0.64, 0.09, 0.08, 1);
+    background: -webkit-linear-gradient(top, rgba(255, 255, 255, 0) 96%, #fff 4%);
+    background: linear-gradient(to bottom, rgba(255, 255, 255, 0) 96%, #fff 4%);
+    background-position: -800px 0;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    color: #fff;
+    font-family: 'Roboto', sans-serif;
+  }
+  
+  input.email, input.text.w3lpass {
+    margin: 2em 0;
+  }
+  
+  .text:focus, .text:valid {
+    box-shadow: none;
+    outline: none;
+    background-position: 0 0;
+  }
+  
+  .text:focus::-webkit-input-placeholder, .text:valid::-webkit-input-placeholder {
+    color: rgba(255, 255, 255, 0.7);
+    font-size: .9em;
+    -webkit-transform: translateY(-30px);
+    -moz-transform: translateY(-30px);
+    -o-transform: translateY(-30px);
+    -ms-transform: translateY(-30px);
+    transform: translateY(-30px);
+    visibility: visible !important;
+  }
+  
+  ::-webkit-input-placeholder {
+    color: #fff;
+    font-weight: 100;
+  }
+  
+  :-moz-placeholder {
+    /* Firefox 18- */
+    color: #fff;
+  }
+  
+  ::-moz-placeholder {
+    /* Firefox 19+ */
+    color: #fff;
+  }
+  
+  :-ms-input-placeholder {
+    color: #fff;
+  }
+  
+  input[type="submit"] {
+    border-radius: 4px;
+    font-size: .9em;
+    color: #005555cc;
+    outline: none;
+    border: transparent;
+    cursor: pointer;
+    padding: 0.9em;
+    -webkit-appearance: none;
+    width: 95%;
+    margin: .4em 0em .2em 0em;
+    letter-spacing: 4px;
+  }
+  
+  input[type="submit"]:hover {
+    color: white;
+    -webkit-transition: .5s all;
+    -moz-transition: .5s all;
+    -o-transition: .5s all;
+    -ms-transition: .5s all;
+    transition: .5s all;
+    background: var(--btn_hover);
+  }
+  
+  .agileits-top p {
+    font-size: 1em;
+    color: #fff;
+    text-align: center;
+    letter-spacing: 1px;
+    font-weight: 300;
+  }
+  
+  .agileits-top p a {
+    color: #fff;
+    -webkit-transition: .5s all;
+    -moz-transition: .5s all;
+    transition: .5s all;
+    font-weight: 400;
+  }
+  
+  .agileits-top p a:hover {
+    color: #76b852;
+  }
+  
+  /*-- //main --*/
+  /*-- checkbox --*/
+  .wthree-text label {
+    font-size: 0.9em;
+    color: #fff;
+    font-weight: 200;
+    cursor: pointer;
+    position: relative;
+  }
+  
+  input.checkbox {
+    background: #8DC26F;
+    cursor: pointer;
+    width: 1.2em;
+    height: 1.2em;
+  }
+  
+  input.checkbox:before {
+    content: "";
+    position: absolute;
+    width: 1.2em;
+    height: 1.2em;
+    background: inherit;
+    cursor: pointer;
+  }
+  
+  input.checkbox:after {
+    content: "";
+    position: absolute;
+    top: 0px;
+    left: 0;
+    z-index: 1;
+    width: 1.2em;
+    height: 1.2em;
+    border: 1px solid #fff;
+    -webkit-transition: .4s ease-in-out;
+    -moz-transition: .4s ease-in-out;
+    -o-transition: .4s ease-in-out;
+    transition: .4s ease-in-out;
+  }
+  
+  input.checkbox:checked:after {
+    -webkit-transform: rotate(-45deg);
+    -moz-transform: rotate(-45deg);
+    -o-transform: rotate(-45deg);
+    -ms-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+    height: .5rem;
+    border-color: #fff;
+    border-top-color: transparent;
+    border-right-color: transparent;
+  }
+  
+  .anim input.checkbox:checked:after {
+    -webkit-transform: rotate(-45deg);
+    -moz-transform: rotate(-45deg);
+    -o-transform: rotate(-45deg);
+    -ms-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+    height: .5rem;
+    border-color: transparent;
+    border-right-color: transparent;
+    animation: .4s rippling .4s ease;
+    animation-fill-mode: forwards;
+  }

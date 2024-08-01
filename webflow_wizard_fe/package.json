@@ -1,0 +1,33 @@
+{
+  "name": "tagged-ui",
+  "version": "1.0.0",
+  "description": "ui for tagged and hike",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron ."
+  },
+  "author": "kushagra",
+  "license": "MIT",
+  "dependencies": {
+    "axios": "^0.27.2",
+    "bluebird": "^3.7.2",
+    "browserify-fs": "^1.0.0",
+    "crypto": "^1.0.1",
+    "electron": "^17.1.2",
+    "macaddress": "^0.5.2",
+    "mdb-ui-kit": "^4.1.0",
+    "puppeteer": "^13.5.2",
+    "xlsx": "^0.18.5"
+  },
+  "devDependencies": {
+    "grunt-bake": "^1.9.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kushagraag/Tagged.git"
+  },
+  "bugs": {
+    "url": "https://github.com/kushagraag/Tagged/issues"
+  },
+  "homepage": "https://github.com/kushagraag/Tagged#readme"
+}

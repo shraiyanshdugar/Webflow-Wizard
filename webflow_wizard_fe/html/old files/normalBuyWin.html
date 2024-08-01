@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+        <link href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i" rel="stylesheet">
+        <link rel="stylesheet" href="../css/normalBuyWin.css">
+        <link rel="stylesheet" href="../css/extraCss/responsive.css">
+        <link rel="stylesheet" href="../css/extraCss/navbar.css">
+        <title>Login name / id of user</title>
+    </head>
+    <body>
+        <navbar></navbar>
+        <form>
+            <div class="row">
+                <div class="col col-4">
+                    <div class="main-w3layouts wrapper">
+                        <h2>Engine 1</h2>
+                        <div>
+                            <div class="main-agileinfo">
+                                <div class="agileits-top">
+                                    <h3 id="currentOwner1">Current Owner:</h3>
+                                    <!-- possible errors -->
+                                    <p style="display: none;" id = "user1err1">User 1 email/password incorrect</p>
+                                    <p style="display: none;" id = "user2err1">User 2 email/password incorrect</p>
+                                    <p style="display: none;" id = "petinvalid1">Pet id is invalid</p>
+                                    <p style="display: none;" id = "maxValueErr1">Pet value is already above max value </p>
+                                    <p style="display: none;" id = "maxValueReached1">Pet Max Value Reached</p>
+                                    <form>
+                                        <!-- Toggle Button for Hi5 or Tagged -->
+                                        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo03" aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
+                                            <span class="navbar-toggler-icon"></span>
+                                        </button>
+                                        <input type = "radio" placeholder="Tagged" id = "taggedInstance1" name = "tagged" value = "tagged" checked>
+                                        <label id = "taggedInstance1" for="tagged">Tagged</label>
+                                        <input type = "radio" placeholder="Hi5" id = "hi5Instance1" name = "tagged" value = "hi5">
+                                        <label id = "hi5Instance1" for="hi5">Hi5</label>
+                                        <!-- Toggle button end -->
+
+                                        <input value="kk.aa.kk@yandex.com" id="email11" class="text email" type="email" name="email" placeholder="Email 1" required>
+                                        <input value="12345678" id="password11" class="text" type="password" name="password" placeholder="Password 1" required>
+                                        <input value="kk.aa.kk1@yandex.com" id="email21" class="text email" type="email" name="email" placeholder="Email 2" required>
+                                        <input value="12345678" id="password21" class="text" type="password" name="password" placeholder="Password 2" required>
+                                        <input value="6067954397" id="petid1" class="text" type="number" name="petid" placeholder="Pet Id" required>
+
+                                        <div class="row">
+                                            <div class="col col-8">
+                                                <input value="12345678" id="maxValue1" class="text" type="number" name="maxValue" required placeholder="Max Value in Numbers">
+                                            </div>
+                                            <div class="col col-3">
+                                                <select id="tagPriceListItem1" value="Td">
+                                                    <option value="priceLabel" id="priceLabel1">Set Price Label</option>
+                                                    <option value="-" id="-">-</option>
+                                                    <option value="M" id="M">M</option>
+                                                    <option value="T" id="T">T</option>
+                                                    <option value="Q" id="Q">Q</option>
+                                                    <option value="S" id="S">S</option>
+                                                    <option value="N" id="N">N</option>
+                                                    <option value="U" id="U">U</option>
+                                                    <option value="Td" id="Td">Td</option>
+                                                    <option value="Qd" id="Qd">Qd</option>
+                                                    <option value="Sd" id="Sd">Sd</option>
+                                                    <option selected value="Nd" id="Nd">Nd</option>
+                                                    <option value="Uv" id="Uv">Uv</option>
+                                                    <option value="Tv" id="Tv">Tv</option>
+                                                    <option value="Qv" id="Qv">Qv</option>
+                                                    <option value="Sv" id="Sv">Sv</option>
+                                                    <option value="Nv" id="Nv">Nv</option>
+                                                </select>
+                                            </div>
+                                        </div>
+
+                                        <div class="row buyer">
+                                            <div class="col col-7">
+                                                <label>Final Buyer</label>
+                                            </div>
+                                            <div class="col col-4">
+                                                <select id="lastBuy1">
+                                                    <option id="anyBuyer1">Any</option>
+                                                    <option id="firstBuyer1">First</option>
+                                                    <option id="secondBuyer1">Second</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col col-6">
+                                                <input type="submit" id="btnRunBothScripts1" value="Run engine">
+                                            </div>
+                                            <div class="col col-6">
+                                                <input type="submit" id="stopTheScripts1" value="Stop engine">
+                                            </div>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                
+                <div class="col col-4">
+                    <div class="main-w3layouts wrapper">
+                        <h2>Engine 2</h2>
+                        <div>
+                            <div class="main-agileinfo">
+                                <div class="agileits-top">
+                                    <h3 id="currentOwner2">Current Owner:</h3>
+                                    <p style="display: none;" id = "user1err2">User 1 email/password incorrect</p>
+                                    <p style="display: none;" id = "user2err2">User 2 email/password incorrect</p>
+                                    <p style="display: none;" id = "petinvalid2">Pet id is invalid</p>
+                                    <p style="display: none;" id = "maxValueErr2">Pet value is already above max value </p>
+                                    <p style="display: none;" id = "maxValueReached2">Pet Max Value Reached</p>
+                                    <form>                                        
+                                        <!-- Toggle Button for Hi5 or Tagged -->
+                                        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo03" aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
+                                            <span class="navbar-toggler-icon"></span>
+                                        </button>
+                                        <input type = "radio" placeholder="Tagged" id = "taggedInstance2" name = "tagged" value = "tagged" checked>
+                                        <label id = "taggedInstance2" for="tagged">Tagged</label>
+                                        <input type = "radio" placeholder="Hi5" id = "hi5Instance2" name = "tagged" value = "hi5">
+                                        <label id = "hi5Instance2" for="hi5">Hi5</label>
+                                        <!-- Toggle button end -->
+
+                                        <input value="kk.aa.kk@yandex.com" id="email12" class="text email" type="email" name="email" placeholder="Email 1" required>
+                                        <input value="12345678" id="password12" class="text" type="password" name="password" placeholder="Password 1" required>
+                                        <input value="kk.aa.kk1@yandex.com" id="email22" class="text email" type="email" name="email" placeholder="Email 2" required>
+                                        <input value="12345678" id="password22" class="text" type="password" name="password" placeholder="Password 2" required>
+                                        <input value="6067954397" id="petid2" class="text" type="number" name="petid" placeholder="Pet Id" required>
+
+                                        <div class="row">
+                                            <div class="col col-8">
+                                                <input value="12345678" id="maxValue2" class="text" type="number" name="maxValue" required placeholder="Max Value in Numbers">
+                                            </div>
+                                            <div class="col col-3">
+                                                <select id="tagPriceListItem2" value="Td">
+                                                    <option value="priceLabel" id="priceLabel2">Set Price Label</option>
+                                                    <option value="-" id="-">-</option>
+                                                    <option value="M" id="M">M</option>
+                                                    <option value="T" id="T">T</option>
+                                                    <option value="Q" id="Q">Q</option>
+                                                    <option value="S" id="S">S</option>
+                                                    <option value="N" id="N">N</option>
+                                                    <option value="U" id="U">U</option>
+                                                    <option value="Td" id="Td">Td</option>
+                                                    <option value="Qd" id="Qd">Qd</option>
+                                                    <option value="Sd" id="Sd">Sd</option>
+                                                    <option selected value="Nd" id="Nd">Nd</option>
+                                                    <option value="Uv" id="Uv">Uv</option>
+                                                    <option value="Tv" id="Tv">Tv</option>
+                                                    <option value="Qv" id="Qv">Qv</option>
+                                                    <option value="Sv" id="Sv">Sv</option>
+                                                    <option value="Nv" id="Nv">Nv</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                        <div class="row buyer">
+                                            <div class="col col-7">
+                                                <label>Final Buyer</label>
+                                            </div>
+                                            <div class="col col-4">
+                                                <select id="lastBuy2">
+                                                    <option id="anyBuyer2">Any</option>
+                                                    <option id="firstBuyer2">First</option>
+                                                    <option id="secondBuyer2">Second</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col col-6">
+                                                <input type="submit" id="btnRunBothScripts2" value="Run engine">
+                                            </div>
+                                            <div class="col col-6">
+                                                <input type="submit" id="stopTheScripts2" value="Stop engine">
+                                            </div>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col col-4">
+                    <div class="main-w3layouts wrapper">
+                        <h2>Engine 3</h2>
+                        <div>
+                            <div class="main-agileinfo">
+                                <div class="agileits-top">
+                                    <h3 id="currentOwner3">Current Owner:</h3>
+                                    <p style="display: none;" id = "user1err3">User 1 email/password incorrect</p>
+                                    <p style="display: none;" id = "user2err3">User 2 email/password incorrect</p>
+                                    <p style="display: none;" id = "petinvalid3">Pet id is invalid</p>
+                                    <p style="display: none;" id = "maxValueErr3">Pet value is already above max value </p>
+                                    <p style="display: none;" id = "maxValueReached3">Pet Max Value Reached</p>
+                                    <form>
+                                        <!-- Toggle Button for Hi5 or Tagged -->
+                                        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo03" aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
+                                            <span class="navbar-toggler-icon"></span>
+                                        </button>
+                                        <input type = "radio" placeholder="Tagged" id = "taggedInstance3" name = "tagged" value = "tagged" checked>
+                                        <label id = "taggedInstance3" for="tagged">Tagged</label>
+                                        <input type = "radio" placeholder="Hi5" id = "hi5Instance3" name = "tagged" value = "hi5">
+                                        <label id = "hi5Instance3" for="hi5">Hi5</label>
+                                        <!-- Toggle button end -->
+
+                                        <input value="kk.aa.kk@yandex.com" id="email13" class="text email" type="email" name="email" placeholder="Email 1" required>
+                                        <input value="12345678" id="password13" class="text" type="password" name="password" placeholder="Password 1" required>
+                                        <input value="kk.aa.kk1@yandex.com" id="email23" class="text email" type="email" name="email" placeholder="Email 2" required>
+                                        <input value="12345678" id="password23" class="text" type="password" name="password" placeholder="Password 2" required>
+                                        <input value="6067954397" id="petid3" class="text" type="number" name="petid" placeholder="Pet Id" required>
+
+                                        <div class="row">
+                                            <div class="col col-8">
+                                                <input value="12345678" id="maxValue3" class="text" type="number" name="maxValue" required placeholder="Max Value in Numbers">
+                                            </div>
+                                            <div class="col col-3">
+                                                <select id="tagPriceListItem3" value="Td">
+                                                    <option value="priceLabel" id="priceLabel3">Set Price Label</option>
+                                                    <option value="-" id="-">-</option>
+                                                    <option value="M" id="M">M</option>
+                                                    <option value="T" id="T">T</option>
+                                                    <option value="Q" id="Q">Q</option>
+                                                    <option value="S" id="S">S</option>
+                                                    <option value="N" id="N">N</option>
+                                                    <option value="U" id="U">U</option>
+                                                    <option value="Td" id="Td">Td</option>
+                                                    <option value="Qd" id="Qd">Qd</option>
+                                                    <option value="Sd" id="Sd">Sd</option>
+                                                    <option selected value="Nd" id="Nd">Nd</option>
+                                                    <option value="Uv" id="Uv">Uv</option>
+                                                    <option value="Tv" id="Tv">Tv</option>
+                                                    <option value="Qv" id="Qv">Qv</option>
+                                                    <option value="Sv" id="Sv">Sv</option>
+                                                    <option value="Nv" id="Nv">Nv</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                        <div class="row buyer">
+                                            <div class="col col-7">
+                                                <label>Final Buyer</label>
+                                            </div>
+                                            <div class="col col-4">
+                                                <select id="lastBuy3">
+                                                    <option id="anyBuyer3">Any</option>
+                                                    <option id="firstBuyer3">First</option>
+                                                    <option id="secondBuyer3">Second</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col col-6">
+                                                <input type="submit" id="btnRunBothScripts3" value="Run engine">
+                                            </div>
+                                            <div class="col col-6">
+                                                <input type="submit" id="stopTheScripts3" value="Stop engine">
+                                            </div>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="container" style="margin:0%"></div>
+            <div>
+
+
+                <script>
+                    fetch("./navbar.html").then(response => {
+                        return response.text()
+                    }).then(data => {
+                        document.querySelector("navbar").innerHTML = data;
+                    });
+                    // fetch("./normalBuyWinInputs.html").then(response => {
+                    //     return response.text()
+                    // }).then(data => {
+                    //     document.querySelector(".inputs1").innerHTML = data;
+                    //     document.querySelector(".inputs2").innerHTML = data;
+                    //     document.querySelector(".inputs3").innerHTML = data;
+                    // });
+                </script>
+
+                <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+                <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
+                <script src = "../js/normalBuyWin.js"></script>
+            </body>
+        </html>
+    </body>
+</html>

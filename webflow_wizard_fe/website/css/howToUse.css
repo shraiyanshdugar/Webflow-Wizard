@@ -1,0 +1,37 @@
+:root {
+  --backGrad: #069A8E;
+  --jumbo: #069a8ee7;
+  --navcol: #005555cc;
+  --btn: #005555a6;
+  --btn_hover: #005555e4;
+}
+
+body {
+    background: var(--backGrad);
+    font: 400 15px Lato, sans-serif;
+    line-height: 1.8;
+    color: #fdfdfdb3;
+  }
+
+  .navbar {
+    background-color: var(--navcol);
+    margin-bottom: 0;
+    border: 0;
+    font-size: 14px !important;
+    line-height: 1.42857143 !important;
+    letter-spacing: 2px;
+    border-radius: 0;
+    font-family: Montserrat, sans-serif;
+  }
+  .navbar li a, .navbar .navbar-brand {
+    color: #fff !important;
+  }
+  .navbar-nav li a:hover, .navbar-nav li.active a {
+    color: #153c61 !important;
+    background-color: #fff !important;
+    border-radius: 4px;
+  }
+  .navbar-default .navbar-toggle {
+    border-color: transparent;
+    color: #fff !important;
+  }

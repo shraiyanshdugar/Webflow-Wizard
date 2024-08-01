@@ -1,0 +1,62 @@
+<div class="main-agileinfo">
+    <div class="agileits-top">
+        <h3 id = "currentOwner">Current Owner: </h3>
+        <form>
+            <input value = "6067954397" id = "petid" class="text" type="number" name="petid" placeholder="Pet Id" required>
+            <input value = "kk.aa.kk@yandex.com" id = "email1" class="text email" type="email" name="email" placeholder="Email 1" required>
+            <input value = "12345678" id = "password1" class="text" type="password" name="password" placeholder="Password 1" required>
+            <input value = "kk.aa.kk1@yandex.com" id = "email2" class="text email" type="email" name="email" placeholder="Email 2" required>
+            <input value = "12345678" id = "password2" class="text" type="password" name="password" placeholder="Password 2" required>
+            
+            <div class="row">
+                <div class="col col-8">
+                    <input value = "12345678" id = "maxValue" class="text" type="number" name="maxValue" required placeholder="Max Value in Numbers">
+                </div>
+                <div class="col col-3">
+                    <select id = "tagPriceListItem" value = "Td">
+                        <option value = "priceLabel" id = "priceLabel">Set Price Label</option>
+                        <option value = "-" id = "-">-</option>
+                        <option value = "M" id = "M" >M</option>
+                        <option value = "T" id = "T">T</option>
+                        <option value = "Q" id = "Q">Q</option>
+                        <option value = "S" id = "S">S</option>
+                        <option value = "N" id = "N">N</option>
+                        <option value = "U" id = "U">U</option>
+                        <option value = "Td" id = "Td">Td</option>
+                        <option value = "Qd" id = "Qd">Qd</option>
+                        <option value = "Sd" id = "Sd">Sd</option>
+                        <option selected value = "Nd" id = "Nd">Nd</option>
+                        <option value = "Uv" id = "Uv">Uv</option>
+                        <option value = "Tv" id = "Tv">Tv</option>
+                        <option value = "Qv" id = "Qv">Qv</option>
+                        <option value = "Sv" id = "Sv">Sv</option>
+                        <option value = "Nv" id = "Nv">Nv</option>
+                    </select>
+                </div>
+            </div>
+
+            <br>
+            <div class="row buyer">
+                <div class="col col-7">
+                    <label>Final Buyer</label>
+                </div>
+                <div class="col col-4">
+                    <select id = "lastBuy">
+                        <option id = "anyBuyer">Any</option>
+                        <option id = "firstBuyer">First</option>
+                        <option id = "secondBuyer">Second</option>
+                    </select>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col col-6">
+                    <input type="submit" id = "btnRunBothScripts" value="Run engine">
+                </div>
+                <div class="col col-6">
+                    <input type="submit" id = "stopTheScripts" value="Stop engine">
+                </div>
+            </div>
+        </form>
+    </div>
+</div>
+
